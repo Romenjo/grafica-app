@@ -1,0 +1,3 @@
+- Instead of learn more make instruction page
+- for each page add a ref on unique page where put a video on relevant topic and questions for selfcontrol
+- i have problem with placement of components, adjusting their size parametrs
