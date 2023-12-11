@@ -15,6 +15,7 @@ function MyRoutes() {
   return (
     <>
       <Routes>
+        <Route path="/" element={<MainPage />} />
         <Route path="/pages/MainPage" element={<MainPage />} />
         <Route path="/pages/HFractalPage" element={<HFractalPage />} />
         <Route path="/pages/JuliaFractalPage" element={<JuliaFractalPage/>}/>

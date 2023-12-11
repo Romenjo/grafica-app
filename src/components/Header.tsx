@@ -1,9 +1,14 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+
 export default function Header() {
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid">
-          <a className="navbar-brand">Pink Penguin Studio</a>
+          <Link to="/" className="navbar-brand">
+            Pink Penguin Studio
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -18,92 +23,92 @@ export default function Header() {
           <div className="collapse navbar-collapse" id="navbarNavDropdown">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className="nav-link" href="/pages/MainPage">
+                <Link to="/pages/MainPage" className="nav-link">
                   Home
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/pages/ColorModelsPage">
+                <Link to="/pages/ColorModelsPage" className="nav-link">
                   Color Models
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/pages/AffinePage">
+                <Link to="/pages/AffinePage" className="nav-link">
                   Affine Transformation
-                </a>
+                </Link>
               </li>
               <li className="nav-item dropdown">
-                <a
+                <Link
+                  to="#"
                   className="nav-link dropdown-toggle"
-                  href="#"
                   id="navbarDropdownMenuLink"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
                   Fractals
-                </a>
+                </Link>
                 <ul
                   className="dropdown-menu dropdown-menu-dark"
                   aria-labelledby="navbarDropdownMenuLink"
                 >
                   <li>
-                    <a
+                    <Link
+                      to="/pages/HFractalPage"
                       className="dropdown-item text-white"
-                      href="/pages/HFractalPage"
                     >
-                      H fraction
-                    </a>
+                      H fractal
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
+                      to="/pages/JuliaFractalPage"
                       className="dropdown-item text-white"
-                      href="/pages/JuliaFractalPage"
                     >
-                      Julia fraction
-                    </a>
+                      Julia fractal
+                    </Link>
                   </li>
                 </ul>
               </li>
 
               <li className="nav-item dropdown">
-                <a
+                <Link
+                  to="#"
                   className="nav-link dropdown-toggle"
-                  href="#"
                   id="navbarDropdownMenuLink"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
                   Learn more
-                </a>
+                </Link>
                 <ul
                   className="dropdown-menu dropdown-menu-dark"
                   aria-labelledby="navbarDropdownMenuLink"
                 >
                   <li>
-                    <a
+                    <Link
+                      to="/pages/LearnFractalsPage"
                       className="dropdown-item text-white"
-                      href="/pages/LearnFractalsPage"
                     >
                       Fractals
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
+                      to="/pages/LearnColorsPage"
                       className="dropdown-item text-white"
-                      href="/pages/LearnColorsPage"
                     >
                       Color models
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
+                      to="/pages/LearnAffinePage"
                       className="dropdown-item text-white"
-                      href="/pages/LearnAffinePage"
                     >
                       Affine
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </li>

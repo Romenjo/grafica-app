@@ -13,14 +13,14 @@ export default function () {
           <Card
             imageUrl={fractal}
             name="Fractal Builder"
-            description="Build interesting things, play trying different parametrs and download your creations. Try it out!"
+            description="Build interesting things, play trying different parametrs and download your creations"
             glowColor="violet"
             to="../pages/HFractalPage"
           />
           <Card
             imageUrl={palitra}
             name="Color Models"
-            description="Add personal photos and play with saturation. Click to see color in RGB, HSL and CMYK"
+            description="Add photos and play with saturation. Click to see color in RGB, HSL and CMYK"
             glowColor="red"
             to="../pages/HFractalPage"
           />
